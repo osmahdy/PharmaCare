@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expiry Tracker | PharmaCare</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-capsules pill-icon"></i>
+          <span class="pharmacy-name">PharmaCare</span>
+          <span class="connect-text">Connect</span>
+        </div>
+
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+          </a>
+          <a href="inventory.html" class="nav-link">
+            <i class="fas fa-pills"></i>
+            <span>Inventory</span>
+          </a>
+          <a href="expiry.html" class="nav-link active">
+            <i class="fas fa-exclamation-triangle"></i>
+            <span>Expiry Tracker</span>
+          </a>
+        </div>
+
+        <div class="nav-user">
+          <div class="user-info">
+            <span class="welcome-text">Welcome,</span>
+            <span class="user-name">Dr. Kamel</span>
+          </div>
+          <div class="user-avatar">
+            <i class="fas fa-user-md"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Warning Banner -->
+      <div class="expiry-warning-banner">
+        <div class="warning-icon">
+          <i class="fas fa-radiation-alt"></i>
+        </div>
+        <div class="warning-content">
+          <h2>⚠️ EXPIRED MEDICINES ALERT</h2>
+          <p>
+            These medicines have passed their expiry date. Immediate action is required to remove
+            them from stock.
+          </p>
+        </div>
+        <div class="warning-count">
+          <span class="count-number">3</span>
+          <span class="count-label">Expired Items</span>
+        </div>
+      </div>
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title">
+          <i class="fas fa-calendar-times"></i>
+          Expired Medicines Tracker
+        </h1>
+        <p class="page-subtitle">
+          Monitor and manage expired medicines to ensure patient safety and regulatory compliance.
+        </p>
+
+        <div class="expiry-stats">
+          <div class="expiry-stat severe">
+            <i class="fas fa-skull-crossbones"></i>
+            <span>3 Already Expired</span>
+          </div>
+          <div class="expiry-stat warning">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>2 Expiring This Month</span>
+          </div>
+          <div class="expiry-stat safe">
+            <i class="fas fa-shield-alt"></i>
+            <span>10 Safe (6+ months)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expired Medicines List -->
+      <div class="expired-medicines-section">
+        <h3 class="section-title">
+          <i class="fas fa-ban"></i>
+          Expired Medicines List
+        </h3>
+        <p class="section-subtitle">These items must be removed from shelves immediately.</p>
+
+        <!-- Expired Medicine Cards -->
+        <div class="expired-cards-grid">
+          <!-- Expired Medicine 1 -->
+          <div class="expired-card">
+            <div class="expired-card-header">
+              <div class="expired-badge">
+                <i class="fas fa-exclamation-triangle"></i>
+                EXPIRED
+              </div>
+              <div class="expired-days">
+                <i class="fas fa-calendar-minus"></i>
+                412 days overdue
+              </div>
+            </div>
+
+            <div class="medicine-details">
+              <div class="medicine-icon expired">
+                <i class="fas fa-prescription-bottle"></i>
+              </div>
+              <div class="medicine-info">
+                <h4 class="medicine-name">Ibuprofen 400mg</h4>
+                <div class="medicine-category">
+                  <span class="category-tag pain-relief">Pain Relief</span>
+                </div>
+                <div class="medicine-stock">
+                  <span class="stock-count">15 units remaining</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="expiry-details">
+              <div class="expiry-date">
+                <strong>Expiry Date:</strong>
+                <span class="date-expired">03-05-2023</span>
+              </div>
+              <div class="expiry-status">
+                <strong>Status:</strong>
+                <span class="status-expired">HIGHLY DANGEROUS</span>
+              </div>
+            </div>
+
+            <div class="expired-actions">
+              <button class="action-btn remove-btn">
+                <i class="fas fa-trash-alt"></i>
+                Remove from Stock
+              </button>
+              <button class="action-btn log-btn">
+                <i class="fas fa-file-alt"></i>
+                Log Disposal
+              </button>
+            </div>
+
+            <div class="expired-note">
+              <i class="fas fa-info-circle"></i>
+              <small>This medicine should have been removed 1 year ago.</small>
+            </div>
+          </div>
+
+          <!-- Expired Medicine 2 -->
+          <div class="expired-card">
+            <div class="expired-card-header">
+              <div class="expired-badge">
+                <i class="fas fa-exclamation-triangle"></i>
+                EXPIRED
+              </div>
+              <div class="expired-days">
+                <i class="fas fa-calendar-minus"></i>
+                397 days overdue
+              </div>
+            </div>
+
+            <div class="medicine-details">
+              <div class="medicine-icon expired">
+                <i class="fas fa-capsules"></i>
+              </div>
+              <div class="medicine-info">
+                <h4 class="medicine-name">Aspirin 75mg</h4>
+                <div class="medicine-category">
+                  <span class="category-tag pain-relief">Pain Relief</span>
+                </div>
+                <div class="medicine-stock">
+                  <span class="stock-count">18 units remaining</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="expiry-details">
+              <div class="expiry-date">
+                <strong>Expiry Date:</strong>
+                <span class="date-expired">30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
